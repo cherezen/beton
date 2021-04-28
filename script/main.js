@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
   centerSlides: true,
   centerSlidesBounds: true,
-  resizeObserver: true,
+  updateOnWindowResize: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
