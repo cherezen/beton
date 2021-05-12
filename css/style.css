@@ -5,10 +5,11 @@
 }
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: normal;
-    color: #010B11;
+    color: #767676;
+    background: #FAFAFA;
 }
 
 .container {
@@ -33,6 +34,7 @@ body {
 
 .header__phone a {
     font-weight: bold;
+    color: #2A2A2A;
 }
 
 .menu-nav ul {
@@ -105,17 +107,27 @@ body {
     border: none;
 }
 
+nav {
+    width: 100%;
+}
+
 .menu__list {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .menu__item {
-    display: block;
+    width: 100%;
     height: 50px;
 }
 
 .menu__item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: bold;
@@ -127,66 +139,82 @@ body {
 }
 
 .main {
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url('../img/main-bg.jpg') center center / cover no-repeat;
+    padding: 150px 0 30px 0;
 }
 
-.main__subtitle {
-    margin: 70px 0 15px 0;
-    text-align: center;
+.main__wrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
 }
 
 .main__title {
-    font-size: 56px;
-    line-height: 68px;
-    color: #00283F;
-    text-align: center;
+    font-size: 58px;
+    line-height: 50px;
+    color: #2A2A2A;
+    text-transform: uppercase;
 }
 
-.main__span {
-    display: none;
+.main__title span {
+    font-size: 30px;
+    text-transform: none;
+}
+
+.main__description {
+    margin-top: 15px;
+    max-width: 490px;
+    color: #767676;
+    line-height: 150%;
 }
 
 .main__buttons {
     margin: 45px 0;
     display: flex;
-    justify-content: center;
 }
 
 .button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
     color: #FFFFFF;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     background-color: #0770AA;
     border: none;
     cursor: pointer;
     outline: transparent;
+    letter-spacing: 0.07em;
+    border-radius: 3px;
 }
 
-.main__button {
+.button_main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 15px;
+    margin-right: 20px;
     width: 230px;
     height: 60px;
     text-decoration: none;
 }
+.main__img {
+    width: 630px;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+}
+
+.main__img img {
+    width: 100%;
+}
 
 .about {
-    padding-top: 140px;
+    padding: 140px 0 70px 0;
 }
 
 .title {
     text-align: center;
     font-weight: bold;
     font-size: 36px;
-    color: #00283F;
+    color: #2A2A2A;
 }
 
 .about__wrapper {
@@ -196,15 +224,23 @@ body {
     align-items: center;
 }
 
-.about__reasons {
+.about__img {
+    width: 520px;
+}
+
+.about__img img {
     width: 100%;
+}
+
+.about__reasons {
+    width: 400px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .about__description {
-    max-width: 515px;
+    max-width: 535px;
 }
 
 .about__description .title {
@@ -213,65 +249,83 @@ body {
 }
 
 .about__text {
-    margin: 0px auto 30px auto;
+    margin: 0px auto 20px auto;
     line-height: 150%;
 }
 
+.about__text:last-child {
+    margin-bottom: 0;
+}
+
+.advantages {
+    padding: 70px 0;
+}
+
+.advantages__wrapper {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .advantages__item {
-    margin: 25px 0;
-    width: 200px;
+    margin: 30px 10px;
+    width: 280px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .advantages__icon {
-    width: 55px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .advantages__icon_1 {
-    width: 85px;
-    background-image: url('../img/concrete-truck.svg');
+    background-image: url('../img/adv1.svg');
 }
 
 .advantages__icon_2 {
-    background-image: url('../img/loss.svg');
+    background-image: url('../img/adv2.svg');
 }
 
 .advantages__icon_3 {
-    background-image: url('../img/quality.svg');
+    background-image: url('../img/adv3.svg');
 }
 
 .advantages__icon_4 {
-    background-image: url('../img/blood-sample.svg');
+    background-image: url('../img/adv4.svg');
 }
 
 .advantages__icon_5 {
-    background-image: url('../img/business.svg');
+    background-image: url('../img/adv5.svg');
 }
 
 .advantages__icon_6 {
-    background-image: url('../img/paper.svg');
+    background-image: url('../img/adv6.svg');
+}
+
+.advantages__subtitle {
+    width: 230px;
+    margin-top: 20px;
+    color: #2A2A2A;
+    font-weight: 700;
+    text-align: center;
 }
 
 .advantages__text {
-    width: 200px;
-    margin-top: 20px;
+    margin-top: 10px;
+    width: 260px;
     font-size: 16px;
     text-align: center;
 }
 
 .product {
-    padding-top: 90px;
-}
-
-.container_slider {
-    width: 1245px;
-    margin: 0 auto;
+    padding: 70px 0;
 }
 
 .product__wrapper {
@@ -282,14 +336,19 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 24px;
+    color: #2A2A2A;
 }
 
 .swiper-container {
     margin: 30px 0 40px 0;
     padding: 0 52px;
     width: 100%;
-    height: 360px;
+    height: 340px;
     position: relative;
+}
+
+.swiper-slide {
+    width: 330px;
 }
 
 .swiper-button-prev, 
@@ -306,12 +365,14 @@ body {
 .swiper-button-prev {
     left: -1px;
     background-position: left center;
+    background-color: #FAFAFA;
     background-image: url('../img/prev.svg');    
 }
 
 .swiper-button-next {
     right: -1px;
     background-position: right center;
+    background-color: #FAFAFA;
     background-image: url('../img/next.svg');    
 }
 
@@ -331,15 +392,17 @@ body {
 }
 
 .card {
-    width: 360px;
-    height: 360px;
-    border: 2px solid rgba(7, 112, 170, 0.2);
-    padding: 50px 40px;
+    width: 100%;
+    height: 340px;
+    padding: 40px 30px;
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background: transparent;
+    border: 1px solid rgba(118, 118, 118, 0.5);
+    border-radius: 5px;
 }
 
 .card__descr {
@@ -352,11 +415,13 @@ body {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    color: #2A2A2A;
 }
 
 .card__price {
     font-weight: bold;
     font-size: 24px;
+    color: #2A2A2A;
 }
 
 .card__price span {
@@ -364,81 +429,54 @@ body {
 }
 
 .card__button {
-    width: 280px;
+    width: 100%;
     height: 60px;
 }
 
-.question {
-    margin-top: 140px;
+.delivery {
     padding: 70px 0;
-    background-color: #E4F7FD;
 }
 
-.question__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} 
-
-.question__text {
-    text-align: center;
-    line-height: 150%;
-}
-
-.question__form {
-    margin-top: 30px;
-    width: 940px;
-}
-
-.form__wrapper {
+.delivery__wrapper {
     display: flex;
     justify-content: space-between;
-}
-
-.question__input {
-    width: 300px;
-    height: 60px;
-    padding: 0 15px;
-    outline: transparent;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-}
-
-.question__input::placeholder {
-    color: #7E7E7E;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-}
-
-.question__button {
-    width: 280px;
-    height: 60px;
-}
-
-.check__wrapper {
-    margin-top: 20px;
-    display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.question__check {
-    width: 20px;
-    height: 20px;
+.delivery__image {
+    width: 520px;
 }
 
-.check__wrapper label {
-    margin-left: 10px;
-    font-size: 14px;
+.delivery__image img {
+    width: 100%;
 }
 
-label a {
-    text-decoration: none;
-    color: #0770AA;
+.delivery__block {
+    margin-top: 40px;
+    width: 458px;
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery__item {
+    height: 26px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery__item:last-child {
+    margin-bottom: 0;
+}
+
+.delivery__value {
+    font-weight: 700;
+    color: #2A2A2A;
 }
 
 .info {
-    padding: 140px 0 100px 0;
+    padding: 70px 0;
 }
 
 .info .title {
@@ -474,9 +512,14 @@ label a {
 .info__contacts-name {
     margin-bottom: 15px;
     font-weight: bold;
+    color: #2A2A2A
 }
 
-.info__contacts-value a{
+.info__contacts-value {
+    line-height: 150%;
+}
+
+.info__contacts-value a {
     text-decoration: none;
     color: inherit;
     line-height: 150%;
@@ -484,6 +527,31 @@ label a {
 
 .info__requisites {
     width: 46%;
+}
+
+.info__requisites .title {
+    margin-bottom: 70px;
+}
+
+.info__requisites-block {
+    display: flex;
+}
+
+.info__requisites-item {
+    margin-bottom: 40px;
+}
+
+.info__requisites-name {
+    margin-right: 7px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #2A2A2A;
+}
+
+.column {
+    width: 200px;
+    margin-right: 60px;
+
 }
 
 .footer {
@@ -501,6 +569,25 @@ label a {
 .footer__policy a {
     color: #FFFFFF;
     font-size: 12px;
+}
+
+.map {
+    position: relative;
+}
+.map__source_2 {
+    display: none;
+}
+
+.recall {
+    padding: 60px 40px 40px 40px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% - 1140px) / 2;
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    border: 1px solid rgba(118, 118, 118, 0.5);
 }
 
 .modal {
@@ -537,6 +624,8 @@ label a {
     outline: transparent;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    border: 1px solid rgba(118, 118, 118, 0.5);
+    border-radius: 3px;
 }
 
 .modal__button {
@@ -560,6 +649,7 @@ label a {
 }
 
 .modal__textarea {
+    margin-bottom: 15px;
     padding: 15px;
     width: 100%;
     height: 120px;
@@ -567,6 +657,7 @@ label a {
     font-size: 16px;
     outline: transparent;
     resize: none;
+    border: 1px solid rgba(118, 118, 118, 0.5);
 }
 
 .modal__input::placeholder {
@@ -586,14 +677,42 @@ label a {
     height: 35px;
 }
 
-.modal label {
+label {
     line-height: 150%;
+    font-size: 14px;
+}
+
+label a {
+    color: inherit;
+}
+
+.policy__conditions {
+    padding: 70px 0 50px 0;
+}
+.policy__subtitle {
+    margin: 40px 0 15px 0;
+    font-weight: 700;
+}
+.policy__text {
+    margin-bottom: 10px;
+}
+.policy__text li {
+    margin-top: 7px;
+    margin-left: 40px;
+}
+.button_policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 70px auto;
+    width: 230px;
+    height: 60px;
 }
 
 
 @media(max-width: 1300px) {
-    .container_slider {
-        width: 1000px;
+    .container {
+        width: 1100px;
     }
     .card {
         width: 290px;
@@ -627,13 +746,23 @@ label a {
         width: 210px;
         text-align: right;
     }
+    .main__img {
+        width: 450px;
+        top: 0;
+    }
 
-    .about__wrapper {
-        flex-direction: column-reverse;
-        justify-content: center;
+    .about__description {
+        width: 480px;
     }
     .about__reasons {
+        width: 600px;
         margin-top: 30px;
+    }
+    .about__img {
+        width: 400px;
+    }
+    .delivery__image {
+        width: 400px;
     }
     .info__contacts-line {
         flex-direction: column;
@@ -641,54 +770,93 @@ label a {
 }
 
 @media(max-width: 1100px) {
+
     .container {
         width: 900px;
     }
     .main {
-        height: 650px;
+        padding-bottom: 35px;
+        height: 480px;
     }
-
-    .container_slider {
-        width: 860px;
+    .main__title {
+        font-size: 50px;
+        line-height: 43px;
     }
-    .card {
-        width: 360px;
-        padding: 50px 40px;
+    .main__description {
+        max-width: 475px;
     }
-    .card__button {
-        width: 250px;
+    .about__description {
+        width: 430px;
     }
-    .card__price {
-        font-size: 24px;
-    }
-    .card__price span {
-        font-size: 44px;
-    }
-    .question__form {
-        width: 100%;
-    }
-    .question__button {
-        width: 240px;
+    .delivery__block {
+        width: 430px;
     }
     
 }
 
 @media(max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
     .container {
         width: 700px;
     }
     .menu {
         width: 50%;
     }
-    .advantages__wrapper {
-        width: 560px;
+    .main {
+        width: 100%;
+        height: 870px;
+        padding-top: 70px;
     }
-    .container_slider {
-        width: 700px;
+    .main__wrapper {
+        justify-content: center;
+    }
+    .main__img {
+        width: 80%;
+        top: 380px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .about {
+        padding: 35px 0;
+    }
+    .about__wrapper {
+        flex-direction: column-reverse;
+    }
+    .about__img {
+        margin-top: 50px;
+    }
+    .advantages {
+        padding: 35px 0;
+    }
+    .advantages__wrapper {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    .advantages__item {
+        width: 220px;
+    }
+    .advantages__subtitle {
+        width: 200px;
+    }
+    .advantages__text {
+        width: 230px;
+    }
+    .product {
+        padding: 35px 0;
+    }
+    .product__subtitle {
+        font-size: 18px;
     }
     .card {
         width: 290px;
         padding: 40px 30px;
+    }
+    .card__descr,
+    .card__mark {
+        font-size: 18px;
     }
     .card__button {
         width: 230px;
@@ -700,27 +868,51 @@ label a {
     .card__price span {
         font-size: 36px;
     }
-    .question__form {
-        width: 360px;
+    .delivery {
+        padding: 35px 0;
+    }
+    .delivery__wrapper {
         flex-direction: column;
-        align-items: center;
     }
-    .question__input {
-        width: 100%;
-        margin-bottom: 20px;
+    .delivery__image {
+        margin-top: 50px;
     }
-    .question__button {
-        width: 100%;
+    .info {
+        padding: 35px 0;
+    }
+    .info__contacts {
+        width: 35%;
+    }
+    .info__requisites {
+        width: 55%;
+    }
+    .info__contacts-block {
+        margin-top: 40px;
+    }
+    .info__contacts-item {
+        margin-bottom: 25px;
+    }
+    .info__contacts-name,
+    .info__requisites-name {
+        margin-bottom: 10px;
+    }
+    .info__requisites .title {
+        margin-bottom: 40px;
+    }
+    .info__requisites-item {
+        margin-bottom: 25px;
+    }
+    .recall {
+        display: none;
+    }
+    .map__source_1 {
+        display: none;
+    }
+    .map__source_2 {
+        display: block;
     }
     .form__wrapper {
         flex-direction: column;       
-    }
-    .question__check {
-        width: 32px;
-        height: 32px;
-    }
-    .check__wrapper label {
-        line-height: 150%;
     }
 }
 
@@ -734,8 +926,8 @@ label a {
     .menu {
         width: 50%;
     }
-    .main__subtitle {
-        margin-top: 110px;
+    .main {
+        height: 715px;
     }
     .main__title {
         line-height: 90%;
@@ -743,49 +935,31 @@ label a {
     .main__buttons {
         margin-top: 30px;   
     }
-    .main__button {
+    .button_main {
         width: 220px;
     }
-    .main__title span {
-        font-size: 30px;
-    }
-    .about {
-        padding-top: 100px;
+    .main__img {
+        top: 325px;
     }
     .about__reasons {
+        width: 500px;
         justify-content: space-around;
     }
     .advantages {
         padding-top: 100px;
     }
+    .advantages__text {
+        width: 100%;
+        max-width: 260px;
+    }
     .title {
         margin: 0 auto;
-        font-size: 30px;
-    }
-    .advantages__wrapper {
-        margin-top: 60px;
-        width: 90%;
-    }
-    .advantages__item {
-        width: 36%;
     }
     .product__wrapper {
         margin-top: 40px;
     }
     .product__subtitle {
         font-size: 20px;
-    }
-    .container_slider {
-        width: 500px;
-    }
-    .swiper-slide {
-        width: 70%;
-    }
-    .question {
-        margin-top: 100px;
-    }
-    .info {
-        padding: 100px 0; 
     }
     .info__wrapper {
         flex-direction: column;
@@ -827,40 +1001,43 @@ label a {
         width: 80%;
     }
     .main {
-        background: url(../img/main-bg.jpg) center top / auto no-repeat;
+        height: 790px;
     }
     .main__title {
-        font-size: 52px;
-        line-height: 100%;
+        font-size: 48px;
+        line-height: 120%;
     }
     .main__title span {
-        display: none;
-    }
-    .main__span {
-        margin-top: 10px;
+        margin-top: -10px;
+        font-size: 24px;
         display: block;
-        font-size: 20px;
-        font-weight: bold;
-        color: #00283F;
-        text-align: center;
     }
-
+    .main__description {
+        margin-top: 5px;
+    }
     .main__buttons {
-        margin: 45px 0;
+        margin: 25px 0;
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
-    .main__button {
-        width: 280px;
+    .button_main {
+        width: 100%;
         margin: 5px 0;
     }
-    .about {
-        padding-top: 70px;
+    .main__img {
+        width: 100%;
+        top: 495px;
+    }
+    .about__description {
+        width: 100%;
     }
     .about__text {
         font-size: 18px;
         text-align: left;
+    }
+    .about__img {
+        width: 100%;
     }
     .advantages {
         padding-top: 70px;
@@ -868,7 +1045,7 @@ label a {
     .advantages__item {
         width: 100%;
     }
-    .container_slider {
+    .advantages__subtitle {
         width: 100%;
     }
     .product__subtitle {
@@ -877,23 +1054,31 @@ label a {
         max-width: 85%;
     }
     .swiper-container {
-        padding: 0 20px;
+        padding: 0;
         height: 300px;
     }
     .card {
-        width: 256px;
+        width: 240px;
         height: 300px;
-        padding: 20px 10px;
+        padding: 30px 15px 20px;
+    }
+    .card__price {
+        font-size: 18px;
+    }
+    .card__button {
+        width: 100%;
     }
     .swiper-button-next,
     .swiper-button-prev {
         display: none;
     }
-    .question {
-        margin-top: 70px;
-        padding: 40px 0;
+    .delivery__block {
+        width: 100%;
     }
-    .question__form {
+    .delivery__name {
+        max-width: 150px;
+    }
+    .delivery__image {
         width: 100%;
     }
     .info {
@@ -901,6 +1086,9 @@ label a {
     }
     .info__contacts, .info__requisites {
         width: 100%;
+    }
+    .info__requisites-block {
+        flex-direction: column;
     }
     .check__wrapper label {
         font-size: 12px;

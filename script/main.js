@@ -1,62 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
-  speed: 400,
-  spaceBetween: 30,
-  slidesPerView: 3,
-  centerSlides: true,
-  centerSlidesBounds: true,
-  updateOnWindowResize: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 'auto',
-      spaceBetween: 80,
-    },
-    360: {
-      slidesPerView: 'auto',
-      spaceBetween: 60,
-    },
-    400: {
-      slidesPerView: 'auto',
-      spaceBetween: 20,
-    },
-    440: {
-      slidesPerView: 'auto',
-      spaceBetween: 0,
-    },
-    480: {
-      slidesPerView: 'auto',
-      spaceBetween: -20,
-    },
-    530: {
-      slidesPerView: 'auto',
-      spaceBetween: -70,
-    },
-    577: {
-      slidesPerView: 'auto',
-      spaceBetween: 30,
-    },
-    769: {
-      spaceBetween: 23,
-      slidesPerView: 2,
-    },
-    993: {
-      slidesPerView: 2,
-    },
-    1100: {
-      spaceBetween: 25,
-      slidesPerView: 3,
-    },
-    1300: {
-      spaceBetween: 30,
-      slidesPerView: 3,
-    }
-  }
 
-
-});
 
 
 const menuMobile = document.querySelector('.menu__mobile'),
@@ -84,10 +26,14 @@ close.addEventListener('click', () => {
   overlay.classList.remove('overlay-visible');
 });
 
-modalClose.addEventListener('click', () => {
-  modal.classList.remove('modal-visible');
-  overlay.classList.remove('overlay-visible');
-});
+
+if (modalClose !== null) {
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('modal-visible');
+    overlay.classList.remove('overlay-visible');
+  });
+}
+
 
 overlay.addEventListener('click', () => {
   modal.classList.remove('modal-visible');
