@@ -582,10 +582,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
-.modal .question__check {
-    width: 35px;
-    height: 35px;
-}
 label {
     line-height: 150%;
     font-size: 14px;
