@@ -486,7 +486,7 @@ body {
     align-items: center;
 
 }
-.footer__policy a {
+.footer__policy a, .footer__authors a {
     color: #FFFFFF;
     font-size: 12px;
 }
@@ -593,18 +593,26 @@ label a {
 .policy__conditions {
     padding: 70px 0 50px 0;
 }
+
 .policy__subtitle {
     margin: 40px 0 15px 0;
     color: #2A2A2A;
     font-weight: 700;
 }
+
 .policy__text {
     margin-bottom: 10px;
 }
+
 .policy__text li {
     margin-top: 7px;
     margin-left: 40px;
 }
+
+.policy__text a {
+    color: inherit;
+}
+
 .button_policy {
     display: flex;
     align-items: center;
@@ -996,4 +1004,3 @@ label a {
         padding: 50px 20px 30px 20px;
     }
 }
-
