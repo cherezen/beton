@@ -582,6 +582,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
+.modal_thanks {
+    background: #FAFAFA;
+    height: 254px;
+}
 label {
     line-height: 150%;
     font-size: 14px;
@@ -1002,5 +1006,8 @@ label a {
         width: 320px;
         height: 505px;
         padding: 50px 20px 30px 20px;
+    }
+    .modal_thanks {
+        height: 231px;
     }
 }

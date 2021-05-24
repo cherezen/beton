@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				menu = document.querySelector('.menu'),
 				overlay = document.querySelector('.overlay'),
 				close = document.querySelector('.menu__close'),
-				modalClose = document.querySelector('.modal__close'),
+				modalClose = document.querySelectorAll('.close'),
 				mainButton = document.querySelector('.call'),
 				button = document.querySelectorAll('.card__button'),
 				modal = document.querySelector('.modal'),
@@ -26,10 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	if (modalClose) {
-		modalClose.addEventListener('click', () => {
+		modalClose.forEach(e => e.addEventListener('click', () => {
 			modal.classList.remove('modal-visible');
+			modalThanks.classList.remove('modal-visible');
 			overlay.classList.remove('overlay-visible');
-		});
+		}))
 	}
 
 	overlay.addEventListener('click', () => {
